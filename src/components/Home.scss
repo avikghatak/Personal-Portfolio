@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&family=Poppins:wght@200&family=Roboto&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+.home-container {
+  position: absolute;
+  top: 0;
+  left: 16%;
+  height: 100vh;
+  width: 84%;
+  background-color: rgb(31, 27, 27);
+}
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+
+  h1 {
+    font-size: 3rem;
+    text-transform: capitalize;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    overflow: hidden;
+    font-family: "Montserrat", sans-serif;
+
+    span {
+      font-family: "Montserrat", sans-serif;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 99;
+      background-color: rgb(31, 27, 27);
+      animation: type 2s steps(20) forwards;
+    }
+    &::after {
+      width: 0.125rem;
+      background: white;
+      animation: type1 2s steps(20) forwards, blink 600ms linear infinite;
+    }
+  }
+
+  @keyframes appear {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  button {
+    font-size: 1.2rem;
+    width: 130px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    background: transparent;
+    position: relative;
+    z-index: 9999;
+    padding: auto;
+    border: 2px solid grey;
+    color: rgb(184, 174, 174);
+    text-shadow: 1px 1px black;
+    margin-top: 40px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    background: linear-gradient(
+      135deg,
+      #6a6a6a,
+      #5a5a5a,
+      #4b4b4b,
+      #3d3d3d,
+      #2f2f2f,
+      #212121,
+      #141414,
+      #000000
+    );
+    transition: backgroud 10s ease-in-out;
+
+    &:hover {
+      background: linear-gradient(
+        135deg,
+        #000000,
+        #171716,
+        #272624,
+        #373633,
+        #494743,
+        #5b5954,
+        #6e6b65,
+        #817e77
+      );
+      transition: backgroud 10s ease-in-out;
+    }
+  }
+}
+
+@keyframes type {
+  to {
+    left: 100%;
+  }
+}
+@keyframes type1 {
+  to {
+    left: 101%;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.typing {
+  display: flex;
+  height: 50px;
+  overflow: hidden;
+  font-size: 2.2rem;
+  margin: 20px;
+  font-family: "Poppins" !important;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  // font-weight: inherit;
+  font-family: cursive;
+  letter-spacing: 2px;
+
+  .ul-cont {
+    margin: 0;
+    padding: 0;
+    width: max-content;
+    text-align: left;
+    overflow: hidden;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins" !important;
+    li {
+      margin-left: 6px;
+      padding-left: 6px;
+      list-style: none;
+      width: max-content;
+      position: relative;
+      animation: up-down 7.51s steps(3) infinite;
+      overflow: hidden;
+      background: -webkit-linear-gradient(#eee, #333);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-fill-color: transparent;
+      // font-weight: bold;
+      font-family: "Montserrat", sans-serif;
+      font-family: "Poppins";
+    }
+    li::before,
+    li::after {
+      content: "";
+      background: rgb(31, 27, 27);
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 999;
+      position: absolute;
+      animation: dev 2.5s steps(20) infinite;
+    }
+
+    li::after {
+      top: 3px;
+      width: 0.125rem;
+      height: 90%;
+      background: rgb(163, 163, 163);
+    }
+  }
+}
+
+@keyframes dev {
+  to {
+    left: 100%;
+  }
+}
+@keyframes up-down {
+  to {
+    transform: translateY(-145px);
+  }
+}
+.youtube {
+  position: relative;
+  width: 60px;
+  padding: 10px;
+  z-index: 2;
+  cursor: pointer;
+  filter: brightness(0);
+  transition: all 0.25s linear;
+
+  &:hover {
+    filter: brightness(0);
+    transform: scale(1.2);
+  }
+}
+.social-media {
+  position: relative;
+  z-index: 2;
+  width: 40%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#typer {
+  position: relative;
+  z-index: 99;
+  font-family: "Poppins";
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    width: 00.125rem;
+    background-color: black;
+    z-index: 999999;
+  }
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 18px;
+  color: rgb(131, 131, 131);
+  text-align: center;
+  left: 44%;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+}
+@media (max-width: 1023px) {
+  .home-container {
+    left: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 530px) {
+  .Particle-cont {
+    opacity: 0.2;
+  }
+  .hero {
+    h1 {
+      font-size: 3.2rem;
+      text-align: center;
+    }
+    span {
+      display: block;
+    }
+    .typing {
+      font-size: 1.7rem;
+      margin-top: 20px;
+      margin-bottom: 5px;
+    }
+  }
+  footer {
+    left: 50%;
+    transform: translateX(-53px);
+    opacity: 0.5;
+  }
+  .social-media {
+    img {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+  .hero {
+    h1 {
+      &::before {
+        content: "";
+        display: none;
+      }
+      &::after {
+        content: "";
+        display: none;
+      }
+    }
+  }
+}

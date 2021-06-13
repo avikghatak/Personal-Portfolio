@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&family=Poppins:wght@200&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.Particles3 {
+  position: relative;
+  background-color: #474747;
+  z-index: 1;
+}
+
+.services-background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #4b4747;
+  z-index: -11111;
+}
+
+.skills-head {
+  position: absolute;
+  z-index: 44;
+  top: 150px;
+  font-size: 10em;
+  color: #616161;
+  left: -150px;
+  text-shadow: 1px 0px black;
+  letter-spacing: 2px;
+  padding-bottom: 40px;
+  font-weight: bold;
+  opacity: 0;
+  -webkit-animation: top 1.5s linear forwards;
+          animation: top 1.5s linear forwards;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  text-transform: uppercase;
+}
+
+@-webkit-keyframes top {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes top {
+  to {
+    opacity: 1;
+  }
+}
+
+.services-container {
+  position: relative;
+  left: 16%;
+  width: 84%;
+  z-index: 1;
+  height: 100%;
+}
+
+.skills-container {
+  width: 80%;
+  margin: auto;
+  position: relative;
+  padding-top: 0px;
+  padding-left: 70px !important;
+  z-index: 2;
+}
+
+.skills-container h1 {
+  font-size: 1.5rem;
+  margin-left: 7px;
+  font-family: "Poppins";
+  font-weight: bold;
+}
+
+.skills-container .outer-skill {
+  position: relative;
+  margin: 10px;
+  margin-bottom: 8px;
+  z-index: 0;
+  border-radius: 10px;
+  border: 2px solid #b8b6b6;
+}
+
+.skills-container .outer-skill::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #181d18;
+  z-index: -1;
+  border-radius: 10px;
+  opacity: 0.7;
+}
+
+.skills-container .skill {
+  height: 100px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 9999;
+  color: white;
+  margin-top: 10px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
+}
+
+.skills-container .skill::before, .skills-container .skill::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 94%;
+  height: 11px;
+  background-color: #383838;
+  border-radius: 10px;
+  border: 1px solid #bdbdbd;
+}
+
+.skills-container .skill::after {
+  background-color: #534c4c;
+  height: 7px;
+  bottom: 12px;
+  left: 12px;
+  width: 0;
+}
+
+.Python::after {
+  -webkit-animation: py 2s linear 0.3s forwards;
+          animation: py 2s linear 0.3s forwards;
+}
+
+.HTML::after {
+  -webkit-animation: html 2s linear 0.3s forwards;
+          animation: html 2s linear 0.3s forwards;
+}
+
+.CSS::after {
+  -webkit-animation: css 2s linear 0.3s forwards;
+          animation: css 2s linear 0.3s forwards;
+}
+
+.ReactJS::after {
+  -webkit-animation: react 2s linear 0.3s forwards;
+          animation: react 2s linear 0.3s forwards;
+}
+
+.JavaScript::after {
+  -webkit-animation: JavaScript 2s linear 0.3s forwards;
+          animation: JavaScript 2s linear 0.3s forwards;
+}
+
+.Machine_Learning::after {
+  -webkit-animation: ML 2s linear 0.3s forwards;
+          animation: ML 2s linear 0.3s forwards;
+}
+
+.C::after {
+  -webkit-animation: c 2s linear 0.3s forwards;
+          animation: c 2s linear 0.3s forwards;
+}
+
+@-webkit-keyframes py {
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes py {
+  to {
+    width: 50%;
+  }
+}
+
+@-webkit-keyframes JavaScript {
+  to {
+    width: 60%;
+  }
+}
+
+@keyframes JavaScript {
+  to {
+    width: 60%;
+  }
+}
+
+@-webkit-keyframes html {
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes html {
+  to {
+    width: 80%;
+  }
+}
+
+@-webkit-keyframes css {
+  to {
+    width: 75%;
+  }
+}
+
+@keyframes css {
+  to {
+    width: 75%;
+  }
+}
+
+@-webkit-keyframes c {
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes c {
+  to {
+    width: 70%;
+  }
+}
+
+@-webkit-keyframes ML {
+  to {
+    width: 20%;
+  }
+}
+
+@keyframes ML {
+  to {
+    width: 20%;
+  }
+}
+
+@-webkit-keyframes react {
+  to {
+    width: 40%;
+  }
+}
+
+@keyframes react {
+  to {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .services-container {
+    left: 0 !important;
+    width: 100%;
+  }
+  .skills-head {
+    top: 180px;
+    left: -150px;
+  }
+}
+
+@media (max-width: 767px) {
+  .skills-head {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    top: -80px;
+    font-size: 3.2rem;
+    left: 50%;
+    -webkit-transform: translateX(-86px);
+            transform: translateX(-86px);
+  }
+  .services-container {
+    left: 0;
+    width: 100%;
+  }
+  .skills-container {
+    width: 80%;
+    padding: 0;
+    padding-left: 0 !important;
+    margin: 0;
+    display: block !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    margin-top: 70px;
+    height: 100% !important;
+    margin-bottom: 40px;
+  }
+  .outer-skill {
+    width: 90% !important;
+    padding: 0;
+  }
+  .outer-skill h1 {
+    margin-left: 10px;
+  }
+  .skill::before {
+    width: 92% !important;
+  }
+  .skills-head {
+    color: #7e7b7b;
+  }
+}
+/*# sourceMappingURL=services.css.map */

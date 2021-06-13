@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&family=Poppins:wght@200&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Particles3 {
+  position: relative;
+  background-color: rgb(71, 71, 71);
+  z-index: 1;
+}
+.services-background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(75, 71, 71);
+  z-index: -11111;
+}
+.skills-head {
+  position: absolute;
+  z-index: 44;
+  // height: 45px;
+  top: 150px;
+  font-size: 10em;
+  color: #616161;
+  left: -150px;
+  // font-family: "Poppins";p
+  text-shadow: 1px 0px rgb(0, 0, 0);
+  letter-spacing: 2px;
+  padding-bottom: 40px;
+  font-weight: bold;
+  opacity: 0;
+  animation: top 1.5s linear forwards;
+  transform: rotate(270deg);
+  text-transform: uppercase;
+
+  // &::after,
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   bottom: 0px;
+  //   left: 0px;
+  //   //   right: 10px;
+  //   width: 100%;
+  //   height: 5px;
+  //   background-color: rgb(255, 255, 255);
+  //   border-radius: 10px;
+  //   border: 1px solid grey;
+  // }
+  // &::after {
+  //   background-color: rgb(0, 0, 0);
+  //   height: 4px;
+  //   bottom: 1px;
+  //   left: 4px;
+  //   width: 60%;
+  //   //   animation: load 2s linear 1s forwards;
+  // }
+}
+@keyframes top {
+  to {
+    // transform: translateY(0);
+    opacity: 1;
+  }
+}
+.services-container {
+  position: relative;
+  left: 16%;
+  // background-color: rgb(58, 57, 57);
+  width: 84%;
+  z-index: 1;
+  height: 100%;
+}
+
+.skills-container {
+  width: 80%;
+  margin: auto;
+  position: relative;
+  padding-top: 0px;
+  padding-left: 70px !important;
+  z-index: 2;
+  // padding-bottom: 40px;
+  h1 {
+    font-size: 1.5rem;
+    margin-left: 7px;
+    font-family: "Poppins";
+    font-weight: bold;
+  }
+  .outer-skill {
+    position: relative;
+    margin: 10px;
+    margin-bottom: 8px;
+    z-index: 0;
+    border-radius: 10px;
+    border: 2px solid rgb(184, 182, 182);
+  }
+  .outer-skill::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(24, 29, 24);
+    z-index: -1;
+    border-radius: 10px;
+    opacity: 0.7;
+  }
+  .skill {
+    // background-color: grey;
+    // margin: 10px;
+    height: 100px;
+    border-radius: 10px;
+    position: relative;
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   inset: 0;
+    //   background-color: hotpink;
+    //   border-radius: 10px;
+    z-index: 9999;
+    color: white;
+    margin-top: 10px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+    // }
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      //   right: 10px;
+      width: 94%;
+      height: 11px;
+      background-color: rgb(56, 56, 56);
+      border-radius: 10px;
+      border: 1px solid rgb(189, 189, 189);
+    }
+    &::after {
+      background-color: rgb(83, 76, 76);
+      height: 7px;
+      bottom: 12px;
+      left: 12px;
+      width: 0;
+      //   animation: load 2s linear 1s forwards;
+    }
+  }
+}
+.Python::after {
+  animation: py 2s linear 0.3s forwards;
+}
+.HTML::after {
+  animation: html 2s linear 0.3s forwards;
+}
+.CSS::after {
+  animation: css 2s linear 0.3s forwards;
+}
+.ReactJS::after {
+  animation: react 2s linear 0.3s forwards;
+}
+.JavaScript::after {
+  animation: JavaScript 2s linear 0.3s forwards;
+}
+.Machine_Learning::after {
+  animation: ML 2s linear 0.3s forwards;
+}
+.C::after {
+  animation: c 2s linear 0.3s forwards;
+}
+@keyframes py {
+  to {
+    width: 50%;
+  }
+}
+@keyframes JavaScript {
+  to {
+    width: 60%;
+  }
+}
+@keyframes html {
+  to {
+    width: 80%;
+  }
+}
+@keyframes css {
+  to {
+    width: 75%;
+  }
+}
+@keyframes c {
+  to {
+    width: 70%;
+  }
+}
+@keyframes ML {
+  to {
+    width: 20%;
+  }
+}
+@keyframes react {
+  to {
+    width: 40%;
+  }
+}
+//     p{
+//         position: relative;
+//         margin-bottom: 0;
+//     }
+// }
+@media (max-width: 1023px) {
+  .services-container {
+    left: 0 !important;
+    width: 100%;
+    // margin-left: 100px;
+  }
+  // .skills-container {
+  //   display: block !important;
+  //   padding-left: 0;
+  // }
+  .skills-head {
+    top: 180px;
+    left: -150px;
+  }
+}
+@media (max-width: 767px) {
+  .skills-head {
+    transform: rotate(0deg);
+    top: -80px;
+    font-size: 3.2rem;
+    left: 50%;
+    transform: translateX(-86px);
+  }
+  .services-container {
+    left: 0;
+    width: 100%;
+  }
+  .skills-container {
+    width: 80%;
+    padding: 0;
+    padding-left: 0 !important;
+    margin: 0;
+    display: block !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    // transform: translateX(-15px);
+    margin: auto;
+    margin-top: 70px;
+    height: 100% !important;
+    margin-bottom: 40px;
+    // transform: translateY(10px)
+  }
+  .outer-skill {
+    width: 90% !important;
+    padding: 0;
+    // text-align: center;
+    h1 {
+      // transform: translateX(5px);
+      margin-left: 10px;
+    }
+  }
+  .skill {
+    &::before {
+      width: 92% !important;
+    }
+  }
+  .skills-head {
+    color: rgb(126, 123, 123);
+  }
+}

@@ -1,0 +1,13 @@
+footer {
+  color: white;
+  font-size: 1rem;
+  position: relative;
+  bottom: 0px;
+  left: 16%;
+  width: 84%;
+  text-align: center;
+  z-index: 999999999;
+  font-family: "Poppins";
+  background-color: #333333;
+}
+/*# sourceMappingURL=footer.css.map */
