@@ -21,10 +21,10 @@ export const Navbar = () => {
           <img src={DP} alt="N/A" />
         </div>
         <div className="ul-container">
-          <Link to="/">Home</Link>
-          <Link to="/About">About</Link>
-          <Link to="/Services">Services</Link>
-          <Link to="/Contact">Contact Us</Link>
+          <Link to="/Personal-Portfolio/">Home</Link>
+          <Link to="/Personal-Portfolio/About">About</Link>
+          <Link to="/Personal-Portfolio/Services">Services</Link>
+          <Link to="/Personal-Portfolio/Contact">Contact Us</Link>
         </div>
       </div>
     </div>
