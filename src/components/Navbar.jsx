@@ -23,7 +23,7 @@ export const Navbar = () => {
         <div className="ul-container">
           <Link to="/Personal-Portfolio/">Home</Link>
           <Link to="/Personal-Portfolio/About">About</Link>
-          <Link to="/Personal-Portfolio/Services">Services</Link>
+          <Link to="/Personal-Portfolio/Services">Skills</Link>
           <Link to="/Personal-Portfolio/Contact">Contact Us</Link>
         </div>
       </div>

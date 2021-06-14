@@ -8,35 +8,57 @@
 }
 .Particles3 {
   position: relative;
-  background-color: rgb(71, 71, 71);
+  background-color: rgb(177, 168, 168);
   z-index: 1;
 }
 .services-background {
   position: fixed;
   top: 0;
-  bottom: 0;
+  height: 100vh !important;
   left: 0;
   right: 0;
   background-color: rgb(75, 71, 71);
-  z-index: -11111;
+  z-index: -3;
 }
 .skills-head {
   position: absolute;
-  z-index: 44;
-  // height: 45px;
-  top: 150px;
-  font-size: 10em;
-  color: #616161;
-  left: -150px;
-  // font-family: "Poppins";p
-  text-shadow: 1px 0px rgb(0, 0, 0);
-  letter-spacing: 2px;
-  padding-bottom: 40px;
-  font-weight: bold;
-  opacity: 0;
-  animation: top 1.5s linear forwards;
-  transform: rotate(270deg);
+  z-index: 2;
+  height: max-content;
+  top: 20px;
+  font-size: 2.5em;
+  color: #8f8c8c;
+  left: 40px;
+  text-shadow: 1px 1px black;
+  // font-family: 'Noto Sans SC', sans-serif;
+  font-family: "Baloo Da 2", cursive;
   text-transform: uppercase;
+  transform: translateY(-100px);
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-color: rgb(122, 122, 122);
+    z-index: 2;
+    border-radius: 10px;
+    border: 1px solid rgb(192, 190, 190);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 0px;
+    width: 0%;
+    height: 6px;
+    width: 60%;
+    background-color: rgb(177, 177, 177);
+    border-radius: 10px;
+    z-index: 3;
+    transition: all 0.4s ease-out;
+    animation: skills 1s linear infinite alternate;
+  }
 
   // &::after,
   // &::before {
@@ -80,9 +102,14 @@
   margin: auto;
   position: relative;
   padding-top: 0px;
-  padding-left: 70px !important;
+  // padding-left: 70px !important;
+  margin-top: 80px;
   z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   // padding-bottom: 40px;
+
   h1 {
     font-size: 1.5rem;
     margin-left: 7px;
@@ -96,6 +123,12 @@
     z-index: 0;
     border-radius: 10px;
     border: 2px solid rgb(184, 182, 182);
+    width: 330px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 300px;
+    align-items: center;
   }
   .outer-skill::before {
     content: "";
@@ -107,14 +140,18 @@
     background-color: rgb(24, 29, 24);
     z-index: -1;
     border-radius: 10px;
-    opacity: 0.7;
+    opacity: 0.6;
   }
   .skill {
     // background-color: grey;
     // margin: 10px;
-    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border-radius: 10px;
     position: relative;
+    transform: translateX(0);
     // &::before {
     //   content: "";
     //   position: absolute;
@@ -124,32 +161,69 @@
     z-index: 9999;
     color: white;
     margin-top: 10px;
-    background: -webkit-linear-gradient(#eee, #333);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    // background: -webkit-linear-gradient(#eee, #333);
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
     letter-spacing: 2px;
+    text-align: center;
+    margin-right: 0 !important;
     // }
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 10px;
-      left: 10px;
-      //   right: 10px;
-      width: 94%;
-      height: 11px;
-      background-color: rgb(56, 56, 56);
-      border-radius: 10px;
-      border: 1px solid rgb(189, 189, 189);
+    height: 200px;
+    // &::before,
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   bottom: 10px;
+    //   left: 10px;
+    //   //   right: 10px;
+    //   width: 94%;
+    //   height: 11px;
+    //   background-color: rgb(56, 56, 56);
+    //   border-radius: 10px;
+    //   border: 1px solid rgb(189, 189, 189);
+    // }
+    // &::after {
+    //   background-color: rgb(83, 76, 76);
+    //   height: 7px;
+    //   bottom: 12px;
+    //   left: 12px;
+    //   width: 0;SS
+    //   //   animation: load 2s linear 1s forwards;
+    // }
+    width: 300px;
+    img {
+      width: 60px;
+      filter: invert(1) brightness(80%);
     }
-    &::after {
-      background-color: rgb(83, 76, 76);
-      height: 7px;
-      bottom: 12px;
-      left: 12px;
-      width: 0;
-      //   animation: load 2s linear 1s forwards;
+    h1 {
+      color: rgb(190, 190, 190);
+      margin-top: 10px;
+      font-size: 1.5rem;
     }
+    p {
+      color: white;
+      font-family: "Poppins";
+      font-size: 0.8rem;
+      // min-width: 0px
+      margin: 0px 5px;
+    }
+  }
+}
+#python {
+  img {
+    width: 55px !important;
+  }
+}
+.CSS {
+  img {
+    width: 80px !important;
+    filter: invert(1) brightness(70%) !important;
+  }
+  h1 {
+    transform: translate(-2px, -10px);
+  }
+  p {
+    transform: translateY(-10px);
   }
 }
 .Python::after {
@@ -213,7 +287,31 @@
 //         margin-bottom: 0;
 //     }
 // }
+.ML {
+  margin-bottom: 40px !important;
+}
+@media (max-width: 1150px) {
+  .services-container {
+    padding-left: 0 !important;
+  }
+  .skills-container {
+    padding-left: 0 !important;
+  }
+  .outer-skill {
+    width: 300px !important;
+    padding: 0 !important;
+  }
+  .skill {
+    width: 290px !important;
+  }
+}
 @media (max-width: 1023px) {
+  .skills-head {
+    transform: rotate(0deg);
+    top: -200px;
+    font-size: 3.2rem;
+    transform: translate(250px, -260px);
+  }
   .services-container {
     left: 0 !important;
     width: 100%;
@@ -227,14 +325,20 @@
     top: 180px;
     left: -150px;
   }
+  .outer-skill {
+    width: 500px !important;
+  }
+  .skill {
+    width: 90% !important;
+  }
 }
 @media (max-width: 767px) {
   .skills-head {
     transform: rotate(0deg);
-    top: -80px;
-    font-size: 3.2rem;
+    top: -70px;
+    font-size: 2.8rem;
     left: 50%;
-    transform: translateX(-86px);
+    transform: translateX(10px);
   }
   .services-container {
     left: 0;
@@ -258,6 +362,7 @@
   }
   .outer-skill {
     width: 90% !important;
+    min-width: 310px !important;
     padding: 0;
     // text-align: center;
     h1 {
@@ -266,11 +371,19 @@
     }
   }
   .skill {
+    min-width: 290px !important;
     &::before {
       width: 92% !important;
     }
+    p {
+      width: 260px;
+    }
   }
   .skills-head {
+    transform: translateX(-69px);
     color: rgb(126, 123, 123);
+  }
+  .ML {
+    margin-bottom: 10px !important;
   }
 }
