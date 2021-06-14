@@ -117,7 +117,7 @@
 
 .skills-container .outer-skill {
   position: relative;
-  margin: 10px;
+  margin: 30px;
   margin-bottom: 8px;
   z-index: 0;
   border-radius: 10px;
@@ -149,7 +149,7 @@
   background-color: #181d18;
   z-index: -1;
   border-radius: 10px;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 .skills-container .skill {
@@ -342,7 +342,7 @@
   margin-bottom: 40px !important;
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1161px) {
   .services-container {
     padding-left: 0 !important;
   }
@@ -351,6 +351,7 @@
   }
   .outer-skill {
     width: 300px !important;
+    margin: 20px !important;
     padding: 0 !important;
   }
   .skill {
