@@ -321,7 +321,7 @@ footer {
 
 @media (max-width: 530px) {
   .Particle-cont {
-    opacity: 0.2;
+    opacity: 0.3;
   }
   .hero h1 {
     font-size: 3.2rem;
