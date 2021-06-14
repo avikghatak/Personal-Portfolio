@@ -1,10 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&family=Poppins:wght@200&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@700&display=swap");
 
 .about {
   position: relative;
   z-index: 1;
   background-color: rgb(66, 64, 64);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .about-container {
   position: relative;
@@ -35,38 +41,38 @@
 .about-head {
   position: absolute;
   z-index: 2;
-  height: 45px;
+  height: max-content;
   top: 20px;
-  font-size: 2em;
-  color: rgb(255, 247, 247);
+  font-size: 2.5em;
+  color: #8f8c8c;
   left: 40px;
-  text-shadow: 1px 0px white;
+  text-shadow: 1px 1px black;
   // font-family: 'Noto Sans SC', sans-serif;
-  font-family: "Poppins";
-  text-shadow: 1px 2px black;
-  letter-spacing: 2px;
-  padding-bottom: 50px;
+  font-family: "Baloo Da 2", cursive;
+  text-transform: uppercase;
 
   &::before {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: 3px;
     left: 0;
     width: 100%;
-    height: 4px;
-    background-color: white;
+    height: 6px;
+    background-color: rgb(122, 122, 122);
     z-index: 2;
-    border-radius: 2px;
+    border-radius: 10px;
+    border: 1px solid rgb(192, 190, 190);
   }
   &::after {
     content: "";
     position: absolute;
-    bottom: 1px;
-    left: 1px;
+    bottom: 3px;
+    left: 0px;
     width: 0%;
-    height: 2px;
-    background-color: black;
-    border-radius: 2px;
+    height: 6px;
+    width: 60%;
+    background-color: rgb(177, 177, 177);
+    border-radius: 10px;
     z-index: 3;
     transition: all 0.4s ease-out;
     animation: skills 1s linear infinite alternate;
@@ -102,7 +108,7 @@
       height: 100%;
       background-color: rgb(32, 39, 32);
       border-radius: 20px;
-      opacity: 0.8;
+      opacity: 0.6;
       z-index: -1;
     }
     p {
@@ -159,9 +165,10 @@
 // }
 .education {
   height: 100%;
-  width: 80%;
+  width: 820px;
   margin-top: 50px;
   margin-bottom: 100px;
+  max-width: 1200px;
 
   color: white;
   color: black;
@@ -169,26 +176,40 @@
   &::before {
     content: "";
     height: 100%;
-    width: 4px;
-    background-color: rgb(29, 29, 29);
+    width: 10px;
+
+    background-color: rgb(56, 56, 56);
     z-index: -1;
     position: absolute;
-    left: 51.5%;
-    border-radius: 30%;
+    left: 51.2%;
+    border-radius: 20px;
+    border: 1px solid grey;
   }
 
   .inside1 {
     height: max-content;
+    img {
+      width: 60px;
+      margin-bottom: 10px;
+      margin-top: 5px;
+    }
+  }
+  .inside2 {
+    img {
+      width: 60px;
+      margin-bottom: 10px;
+      margin-top: 5px;
+    }
   }
   ul {
     li {
-      width: 50%;
-      border: 2px solid rgb(228, 215, 215);
+      width: 330px;
+      border: 3px solid rgb(228, 215, 215);
       list-style: none;
-      border-radius: 20px;
+      border-radius: 12px;
       text-align: center;
-      color: white;
-      height: 100px;
+      color: rgb(214, 210, 210);
+      height: 165px;
       text-align: center;
       display: flex;
       align-items: center;
@@ -198,6 +219,7 @@
       font-family: "Poppins";
       transform: scale(1);
       cursor: pointer;
+      max-width: 600px;
       // text-shadow: 0.5px 0px greenyellow;
 
       &::before {
@@ -209,7 +231,8 @@
         background-color: rgb(32, 39, 32);
         border-radius: 15px;
         z-index: -2;
-        opacity: 0.8;
+        opacity: 0.6;
+        transition: all 0.5s linear;
       }
       &:hover::before {
         background-color: rgb(21, 22, 21);
@@ -218,12 +241,12 @@
         font-family: "Poppins";
 
         font-size: 1.2em;
-        letter-spacing: 2px;
+        letter-spacing: 0px;
       }
       h4 {
         font-family: "Poppins";
         font-size: 1.2em;
-        letter-spacing: 1.8px;
+        letter-spacing: 0px;
         margin-top: 20px;
       }
       p {
@@ -234,7 +257,7 @@
     li:nth-child(odd) {
       float: left;
       clear: right;
-      transform: translateX(-30px);
+      transform: translateX(35.5px);
       &::after {
         content: "";
         height: 20px;
@@ -244,7 +267,7 @@
         right: 0;
         transform: translateX(40px);
         background-color: rgb(109, 107, 107);
-        border: 1px solid white;
+        border: 2px solid white;
         z-index: 99;
         position: absolute;
         transition: all 0.4s linear;
@@ -256,7 +279,7 @@
     li:nth-child(even) {
       float: right;
       clear: left;
-      transform: translateX(30px);
+      transform: translateX(-35.5px);
       &::after {
         content: "";
         height: 20px;
@@ -265,7 +288,7 @@
         top: 40%;
         left: -43px;
         background-color: rgb(109, 107, 107);
-        border: 1px solid white;
+        border: 2px solid white;
         z-index: 2;
         position: absolute;
         transition: all 0.4s linear;
@@ -277,22 +300,28 @@
   }
 }
 .inside3 {
+  img {
+    width: 70px;
+    filter: brightness(82%) !important;
+  }
   h4 {
-    margin-top: 15px;
+    margin-top: 0px !important;
   }
 }
 .education-head {
   position: relative;
   font-weight: bold;
-  color: white;
+  color: rgb(129, 129, 129);
   margin-top: 40px;
-  text-shadow: 2px 1px black;
+  text-shadow: 1px 1px black;
   margin-bottom: 20px;
 
   h1 {
     font-family: "Poppins";
-    font-size: 2em;
-    letter-spacing: 4px;
+    font-size: 2.2em;
+    letter-spacing: 0px;
+    font-family: "Baloo Da 2", cursive;
+    text-transform: uppercase;
   }
 
   &::before {
@@ -301,20 +330,21 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px;
-    background-color: white;
+    height: 6px;
+    background-color: rgb(105, 104, 104);
     z-index: 2;
-    border-radius: 2px;
+    border-radius: 12px;
+    border: 1px solid rgb(122, 122, 122);
   }
   &::after {
     content: "";
     position: absolute;
-    bottom: 1px;
-    left: 1px;
-    width: 0%;
-    height: 2px;
-    background-color: black;
-    border-radius: 2px;
+    bottom: 0px;
+    left: 0px;
+    width: 60%;
+    height: 6px;
+    background-color: rgb(153, 151, 151);
+    border-radius: 12px;
     z-index: 3;
     transition: all 0.4s ease-out;
     animation: skills 1s linear infinite alternate;
@@ -364,6 +394,94 @@
   background-color: rgb(75, 74, 74);
 }
 
+.NIT {
+  flex-direction: row;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  .NIT_img {
+    // margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    // background-color: yellowgreen;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    position: relative;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    height: 160px !important;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(32, 39, 32);
+      border-radius: 8px;
+      opacity: 0.5;
+      z-index: -1;
+    }
+    img {
+      width: 100px;
+      filter: invert(0);
+      text-align: center;
+    }
+    h1 {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      font-family: "Poppins";
+      color: rgb(224, 221, 221);
+      // font-weight: bold;
+    }
+    p {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      font-size: 1rem;
+      font-family: "Poppins";
+      color: rgb(224, 221, 221);
+      // font-weight: bold;
+    }
+  }
+}
+.SM {
+  width: 150px !important;
+  transform: translateX(-85px);
+  filter: brightness(80%) !important;
+}
+.CCA {
+  width: 150px !important;
+  transform: translateX(-20px);
+  filter: brightness(80%) !important;
+}
+.NIT_logo {
+  transform: translateX(-35px);
+  filter: brightness(82%) !important;
+}
+.TPR {
+  margin-bottom: 20px !important;
+}
+.SM_h1 {
+  margin-top: 10px;
+  transform: translateX(-23px);
+}
+.CCA_h1 {
+  margin-bottom: 0;
+  padding-bottom: 0 !important;
+  // transform: translateY(-3px);
+}
+// .CCA_p {
+//   // transform: translateY(-3px);
+// }
+
 @media (max-width: 1023px) {
   .about-container {
     margin-left: 0;
@@ -371,10 +489,89 @@
   }
   .about-head {
     left: 50%;
-    transform: translateX(-51px);
+    transform: translateX(-63px);
   }
 }
+.NIT {
+  display: flex;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  .NIT_img {
+    flex-wrap: wrap;
+    width: 320px;
+    // margin: auto;
+    height: 120px;
+    margin-left: 0;
+    margin-right: 0px;
+    margin-bottom: 20px !important;
+    margin: 20px;
+    h1 {
+      font-size: 1rem;
+    }
+  }
+}
+.NIT_logo {
+  transform: translateX(0);
+  width: 70px !important;
+}
+.CCA {
+  width: 80px !important;
+  transform: translateY(0) scale(1.3);
+}
+.CCA_h1 {
+  padding-bottom: 10px !important;
+}
+.SM {
+  width: 100px !important;
+  transform: translateX(0);
+}
+.SM_h1 {
+  transform: translateX(0);
+}
+// .TPR {
+//   // margin-right: 25px !important;
+// }
 @media (max-width: 767px) {
+  .NIT {
+    .NIT_img {
+      width: 80% !important;
+      margin: auto !important;
+      height: 120px;
+      margin-bottom: 20px !important;
+      min-width: 325px;
+      display: flex;
+      flex-direction: column;
+      h1 {
+        font-size: 1rem;
+      }
+    }
+  }
+  .NIT_logo {
+    transform: translateX(0);
+    width: 70px !important;
+  }
+  .CCA {
+    width: 85px !important;
+    transform: translateX(0) scale(1.4);
+  }
+  .CCA_h1 {
+    padding-bottom: 10px !important;
+  }
+  .SM {
+    width: 120px !important;
+    height: 45px;
+    margin-bottom: 7px;
+    transform: translateX(0);
+  }
+  .SM_h1 {
+    margin-top: 8px;
+    transform: translateX(0);
+  }
+
+  .button_CV {
+    margin-top: 0;
+  }
+
   .about-img-1 {
     img {
       transform: translateX(0) translateY(25px);
@@ -395,18 +592,19 @@
     // transform: translateX(-0%);
   }
   .education {
+    width: 100%;
     ul {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-left: 30px;
+      padding-left: 0 !important;
       li:nth-child(odd) {
-        float: right;
-        clear: left;
-        width: 90%;
-        min-width: 330px;
-        // transform: translateX(-30px);
+        float: none;
+        width: 80%;
+        min-width: 325px;
+        max-width: 450px;
+        transform: translateX(0);
         h3 {
           font-size: 1rem;
         }
@@ -433,11 +631,12 @@
         }
       }
       li:nth-child(even) {
-        float: right;
-        clear: left;
-        width: 90%;
-        min-width: 330px;
-        transform: translateX(-30px);
+        float: none;
+        clear: none;
+        width: 80%;
+        min-width: 325px;
+        max-width: 450px;
+        transform: translateX(0);
         margin: 40px;
         h3 {
           font-size: 1rem;
