@@ -32,7 +32,7 @@ export const Contact = () => {
           </div>
           <div className="phone">
             <img src={phone} alt="" />
-            <p>891083196</p>
+            <p>8910831396</p>
           </div>
           <div className="mail">
             <img src={mail} alt="" />
