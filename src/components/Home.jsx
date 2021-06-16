@@ -5,13 +5,17 @@ import TT from "./twitter.png";
 import GT from "./github.png";
 import LI from "./linkedin.png";
 import Typewriter from "typewriter-effect";
-export const Home = () => {
+import { motion } from "framer-motion";
+export const Home = (props) => {
+  const Redirect = () => {
+    props.history.push("/Personal-Portfolio/About");
+  };
   return (
     <div className="home-container">
       <div className="Particle-cont">
         <ParticlesContainer />
       </div>
-      <div className="hero">
+      <div className="hero load">
         <h1>
           Hi I am <span id="name">Avik Ghatak</span>
         </h1>
@@ -40,11 +44,17 @@ export const Home = () => {
             <li>ML Enthusiat. !</li>
           </ul> */}
         </div>
-        <button>Explore</button>
+        <button onClick={Redirect}>Explore</button>
         <div className="social-media">
-          <img src={TT} alt="" className="youtube" />
-          <img src={GT} alt="" className="youtube" />
-          <img src={LI} alt="" className="youtube" />
+          <a href="https://twitter.com/ghatak_avik" target="#">
+            <img src={TT} alt="" className="youtube" />
+          </a>
+          <a href="https://github.com/avikghatak" target="#">
+            <img src={GT} alt="" className="youtube" />
+          </a>
+          <a href="https://www.linkedin.com/in/avik-g-8613151a5/" target="#">
+            <img src={LI} alt="" className="youtube" />
+          </a>
         </div>
       </div>
       <footer>© Avik Ghatak</footer>

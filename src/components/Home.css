@@ -7,6 +7,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  background-color: gray;
+}
+
 .home-container {
   position: absolute;
   top: 0;
@@ -263,8 +267,8 @@
 }
 
 .youtube:hover {
-  -webkit-filter: brightness(0);
-          filter: brightness(0);
+  -webkit-filter: invert(1) brightness(50%);
+          filter: invert(1) brightness(50%);
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
@@ -321,7 +325,7 @@ footer {
 
 @media (max-width: 530px) {
   .Particle-cont {
-    opacity: 0.3;
+    opacity: 0.3 !important;
   }
   .hero h1 {
     font-size: 3.2rem;

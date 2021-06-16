@@ -1,10 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&family=Poppins:wght@200&family=Roboto&display=swap");
+.contact-cover {
+  position: fixed;
+  inset: 0;
+  background-color: #1f1e1e;
+  z-index: -1;
+}
+
+.laptop {
+  width: 600px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
 .Contact-main {
   position: relative;
   left: 16%;
   width: 84%;
-  height: 100vh;
-  background-color: #1f1e1e;
+  height: 100%;
+  background-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,140 +31,332 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow: hidden;
 }
 
-.Contact-main p iframe {
-  width: 100%;
-  height: 400px;
-  border: 4px solid grey;
-  border-radius: 10px;
-}
-
-.content-box {
-  width: 100%;
-  padding-left: 40px;
-}
-
-.content-box .text {
+.Contact-main .content-box {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden !important;
+  height: 550px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Contact-main .content-box .content-head p {
+  font-size: 2.5rem;
+  color: #a5a5a5;
+  font-family: "Poppins";
+  text-shadow: 1px 1px black;
+  font-family: "Baloo Da 2", cursive;
+  text-transform: uppercase;
+  -webkit-transform: translate(-4px, 30px);
+          transform: translate(-4px, 30px);
+}
+
+.Contact-main .content-box .pin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.Contact-main .content-box .pin img {
+  width: 40px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  margin-right: 10px;
+}
+
+.Contact-main .content-box .pin p {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.content-box h2 {
-  background: -webkit-linear-gradient(#eee, #868686);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 0;
   font-family: "Poppins";
-  font-weight: bolder;
-  font-size: 1.5em;
-  letter-spacing: 1.8px;
 }
 
-.content-box P {
-  background: -webkit-linear-gradient(#eee, #6b6b6b);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.Contact-main .content-box .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.Contact-main .content-box .phone img {
+  width: 35px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  margin-right: 20px;
+}
+
+.Contact-main .content-box .phone p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 0;
   font-family: "Poppins";
-  font-weight: bolder;
-  font-size: 1em;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
-.phone {
-  width: 20px;
+.Contact-main .content-box .mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.Contact-main .content-box .mail img {
+  width: 35px;
   -webkit-filter: invert(1);
           filter: invert(1);
+  margin-right: 20px;
 }
 
-.pin {
-  width: 20px;
-  -webkit-filter: invert(1);
-          filter: invert(1);
+.Contact-main .content-box .mail p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  font-family: "Poppins";
+  letter-spacing: 2px;
 }
 
-.mail {
-  width: 20px;
-  -webkit-filter: invert(1);
-          filter: invert(1);
+.Contact-main .laptop-box {
+  width: 600px;
+  height: 550px;
+  margin-top: 50px;
 }
 
-.add {
+.Contact-main .laptop-box iframe {
+  width: 312px;
+  height: 194px;
+  margin: auto;
+  -webkit-transform: translate(140px, -337px);
+          transform: translate(140px, -337px);
+}
+
+.details {
+  position: relative;
+  top: -40px;
+  -webkit-transform: translate(-40px, -20px);
+          transform: translate(-40px, -20px);
+}
+
+.Contact-main h1 {
+  position: relative;
+  font-weight: bold;
+  color: #999898;
   margin-top: 30px;
+  text-shadow: 1px 1px black;
+  margin-bottom: 20px;
+  font-size: 2.2em;
+  letter-spacing: 0px;
+  font-family: "Baloo Da 2", cursive;
+  text-transform: uppercase;
+}
+
+.Contact-main h1::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-color: #696868;
+  z-index: 2;
+  border-radius: 12px;
+  border: 1px solid #7a7a7a;
+}
+
+.Contact-main h1::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0px;
+  width: 60%;
+  height: 6px;
+  background-color: #999797;
+  border-radius: 12px;
+  z-index: 3;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  -webkit-animation: skills 1s linear infinite alternate;
+          animation: skills 1s linear infinite alternate;
+}
+
+.icons {
+  position: relative;
+  top: -80px;
+  -webkit-filter: invert(1) brightness(60%);
+          filter: invert(1) brightness(60%);
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.icons img {
+  width: 60px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.icons img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+@media (max-width: 1305px) {
+  .details {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    top: -130px;
+  }
+  .content-box {
+    top: 0 !important;
+    -webkit-transform: translateY(-60px);
+            transform: translateY(-60px);
+    height: 100% !important;
+  }
 }
 
 @media (max-width: 1023px) {
   .Contact-main {
     left: 0;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important;
-    -webkit-box-align: center !important;
-        -ms-flex-align: center !important;
-            align-items: center !important;
   }
 }
 
-@media (max-width: 860px) {
-  .Contact-main {
-    left: 0;
-  }
+@media (max-width: 656px) {
   .content-box {
-    display: block !important;
-    width: 90%;
-    padding-left: 0 !important;
-    margin-right: 0 !important;
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    left: 0;
+    height: 600px !important;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
   }
-  .text {
-    width: 80%;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  .text h2 {
-    font-size: 1.2rem;
-    margin-top: 0;
-    letter-spacing: 2px;
-  }
-  .text h2 .add {
-    margin-top: 0;
-  }
-  .text p {
-    font-size: 0.9rem;
-  }
-  .map {
-    width: 80%;
+  .laptop-box {
+    width: 350px !important;
+    height: 400px !important;
+    min-width: 0 !important;
+    overflow: hidden !important;
   }
   iframe {
-    width: 90%;
-    height: 220px !important;
+    width: 229px !important;
+    height: 142px !important;
+    -webkit-transform: translate(62px, -281px) !important;
+            transform: translate(62px, -281px) !important;
   }
-  .Address {
-    margin-bottom: 15px;
-    font-size: 1.4rem !important;
+  .details {
+    -webkit-transform: translateY(-130px);
+            transform: translateY(-130px);
+  }
+  .laptop {
+    top: 0;
+    width: 450px;
+    overflow: hidden !important;
+    -webkit-transform: translate(-46px, -30px);
+            transform: translate(-46px, -30px);
+  }
+  .details {
+    top: 0 !important;
+  }
+  .details p {
+    font-size: 0.8rem !important;
+  }
+  .details .pin p {
+    font-size: 0.8rem !important;
+  }
+  .pin img {
+    width: 25px !important;
+    margin-right: 5px;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  .phone img {
+    width: 25px !important;
+    margin-top: 3px;
+    margin-right: 10px !important;
+  }
+  .mail img {
+    width: 25px !important;
+    margin-right: 10px !important;
+  }
+  .icons {
+    top: -100px;
+    width: 300px;
+  }
+  .icons img {
+    width: 34px;
   }
 }
 /*# sourceMappingURL=Contact.css.map */

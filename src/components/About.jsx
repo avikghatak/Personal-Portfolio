@@ -11,6 +11,9 @@ import SM from "./SM.png";
 import { Link } from "react-router-dom";
 import "aos/dist/aos.css";
 import KV from "./KV.png";
+import { AnimatePresence, motion } from "framer-motion";
+import axios from "axios";
+
 import Aos from "aos";
 export const About = () => {
   useEffect(() => {
@@ -22,7 +25,7 @@ export const About = () => {
         <source src={VID} type="video/mov" />
       </video> */}
       <div className="Particles2-cont"></div>
-      <div className="about-container">
+      <div className="about-container load">
         <ParticlesContainer2 />
         <div className="about-head">About</div>
         <div className="Profile row d-flex">
@@ -43,7 +46,12 @@ export const About = () => {
           </div>
         </div>
         <div className="button_CV">
-          <Link to="./home">Download CV</Link>
+          <a
+            href="https://drive.google.com/file/d/1QakoEI9syqDcUCslyNnqc1r51uDFsBej/view?usp=sharing"
+            target="#"
+          >
+            Download CV
+          </a>
         </div>
         <div className="NIT">
           <div className="NIT_img TPR d-flex">

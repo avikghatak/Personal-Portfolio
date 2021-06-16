@@ -7,6 +7,9 @@
 * {
   font-family: "Roboto", sans-serif;
 }
+body {
+  background-color: gray;
+}
 .home-container {
   position: absolute;
   top: 0;
@@ -209,7 +212,7 @@
   transition: all 0.25s linear;
 
   &:hover {
-    filter: brightness(0);
+    filter: invert(1) brightness(50%);
     transform: scale(1.2);
   }
 }
@@ -256,7 +259,7 @@ footer {
 }
 @media (max-width: 530px) {
   .Particle-cont {
-    opacity: 0.3;
+    opacity: 0.3 !important;
   }
   .hero {
     h1 {

@@ -153,4 +153,9 @@
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
+
+.active_nav {
+  color: white !important;
+  position: relative;
+}
 /*# sourceMappingURL=Navbar.css.map */
