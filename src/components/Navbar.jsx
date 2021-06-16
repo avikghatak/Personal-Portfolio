@@ -9,9 +9,9 @@ export const Navbar = () => {
     document.querySelector(".bot").classList.toggle("active3");
     document.querySelector(".nav-container").classList.toggle("active4");
   };
-  const fn2 = (e)=>{
-    fn()
-  }
+  const fn2 = (e) => {
+    fn();
+  };
   return (
     <div>
       <div className="hamburger" onClick={fn}>
@@ -24,10 +24,22 @@ export const Navbar = () => {
           <img src={DP} alt="N/A" />
         </div>
         <div className="ul-container">
-          <NavLink exact activeClassName="active_nav" id="HOME" to="/Personal-Portfolio/" onClick = {fn2}>
+          <NavLink
+            exact
+            activeClassName="active_nav"
+            id="HOME"
+            to="/Personal-Portfolio/"
+            onClick={fn2}
+          >
             Home
           </NavLink>
-          <NavLink exact activeClassName="active_nav" id="ABOUT" to="/Personal-Portfolio/About" onClick = {fn2}>
+          <NavLink
+            exact
+            activeClassName="active_nav"
+            id="ABOUT"
+            to="/Personal-Portfolio/About"
+            onClick={fn2}
+          >
             About
           </NavLink>
           <NavLink
@@ -35,18 +47,18 @@ export const Navbar = () => {
             id="SKILLS"
             to="/Personal-Portfolio/Services"
             exact
-            onClick = {fn2}
+            onClick={fn2}
           >
             Skills
           </NavLink>
           <NavLink
-            id = "CONTACT"
+            id="CONTACT"
             activeClassName="active_nav"
             to="/Personal-Portfolio/Contact"
             exact
-            onClick = {fn2}
+            onClick={fn2}
           >
-            Contact Us
+            Contact Me
           </NavLink>
         </div>
       </div>

@@ -266,10 +266,12 @@
 }
 
 .icons img {
-  width: 60px;
+  width: 40px;
   cursor: pointer;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  -webkit-transform: translateX(-14px);
+          transform: translateX(-14px);
 }
 
 .icons img:hover {
@@ -288,6 +290,10 @@
     -webkit-transform: translateY(-60px);
             transform: translateY(-60px);
     height: 100% !important;
+  }
+  .icons img {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
@@ -357,6 +363,8 @@
   }
   .icons img {
     width: 34px;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 /*# sourceMappingURL=Contact.css.map */
