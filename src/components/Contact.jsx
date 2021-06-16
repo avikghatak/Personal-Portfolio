@@ -46,13 +46,13 @@ export const Contact = () => {
       </div>
       <div className="icons">
         <a href="https://twitter.com/ghatak_avik" target="#">
-          <img src={TT} alt="" className="youtube" />
+          <img src={TT} alt="" />
         </a>
         <a href="https://github.com/avikghatak" target="#">
-          <img src={GT} alt="" className="youtube" />
+          <img src={GT} alt="" />
         </a>
         <a href="https://www.linkedin.com/in/avik-g-8613151a5/" target="#">
-          <img src={LI} alt="" className="youtube" />
+          <img src={LI} alt="" />
         </a>
       </div>
       <div>
