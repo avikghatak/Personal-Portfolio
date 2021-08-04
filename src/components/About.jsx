@@ -47,7 +47,7 @@ export const About = () => {
         </div>
         <div className="button_CV">
           <a
-            href="https://drive.google.com/file/d/1QakoEI9syqDcUCslyNnqc1r51uDFsBej/view?usp=sharing"
+            href="https://drive.google.com/file/d/1WJ8il2Q7cxfrMJialnGVvGU1DW5Bi6Q6/view?usp=sharing"
             target="#"
           >
             Download CV
